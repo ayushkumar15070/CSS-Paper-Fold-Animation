@@ -1,0 +1,51 @@
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #575252;
+      font-family: 'Poppins', sans-serif;
+}
+
+.fold-card {
+      width: 300px;
+      height: 200px;
+      background-color: #ff6600;
+      perspective: 1000px;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 8px;
+      transition: 0.3s ease;
+}
+
+.fold-card:hover .fold-content {
+      transform: rotateX(30deg) rotateY(-10deg) translateZ(30px);
+}
+
+.fold-content {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      color: #ff6600;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform-origin: bottom;
+      transition: 0.3s ease;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      text-align: center;
+}
+
+h2 {
+      font-size: 25px;
+      margin: 0;
+}
+
+p {
+      font-size: 16px;
+      font-weight: bold;
+}
